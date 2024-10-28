@@ -1,0 +1,27 @@
+GIT : VCS => Version Control System => Advantages :
+      - Open Source 
+      - Rapidity & Unlimited Disk Space
+      - collaboration (git-flow)
+      - Data Replication (git fork / git clone)
+
+GITHUB : Remote Platform used to share Project details.
+
+
+Config GIT :
+
+git config --global user.name "---------"
+git config --global user.email "---------@mail.mail"
+
+to verify we use : git config --list
+
+--------------------------------------------------
+Uploading files from working directory => Remote Repository
+ ( git bash )
+1 - git init : initialize empty git Repository (dossier caché .git)
+2 - git add . (select all files from the working directory => add it to staging area [temporary virtual space])
+ --- to verify what's happening in staging area (git status)
+3 - git commit -m "version details" : confirm the selected files , closes the staging area and name the version.
+ --- we can verify the commits using : git log
+4 - git branch -M main : select the branch you're working on.
+5 - git remote github.repository.link
+6 - git push
